@@ -401,19 +401,6 @@ grid-gap: 30px;
   }
 
 
-  .LaPie{
-    grid-column: 9/15;
-    grid-row: 6/10;
-    padding-left: 10px;
-    max-width: 500px;
-  }
-
- .LaPie .MuiAppBar-root{
-background-color: transparent;
-  }
-  .LaPie .MuiTabs-indicator{
-    background-color: rgba(38, 198, 218, 0.56);
-  } 
   
 .QuickLinks{
 grid-column: 1/15;
