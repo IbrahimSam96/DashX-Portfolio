@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { createChart } from 'lightweight-charts';
 import _debounce from 'lodash.debounce';
 import firebase from "firebase"; 
-import HelpOutlineTwoToneIcon from '@material-ui/icons/HelpOutlineTwoTone';
+
 
 
 const  LivePortfolioGraph = (props) => {
