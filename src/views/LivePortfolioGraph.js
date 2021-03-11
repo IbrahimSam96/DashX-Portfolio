@@ -7,7 +7,7 @@ import HelpOutlineTwoToneIcon from '@material-ui/icons/HelpOutlineTwoTone';
 
 const  LivePortfolioGraph = (props) => {
 
-const [width, setWidth] = useState(800);
+const [width, setWidth] = useState(0);
 const [zobe, setZobe] = useState([ ]);
 
 
@@ -166,7 +166,6 @@ tooltiptext.style.color = "white";
 tooltiptext.style.visibility = "hidden";
 tooltiptext.style.backgroundColor = "#11151f";
 
-var Stats = props.Stats.crrent
 
 
 
