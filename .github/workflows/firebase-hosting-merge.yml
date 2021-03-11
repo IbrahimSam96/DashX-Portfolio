@@ -19,5 +19,4 @@ jobs:
           channelId: live
           projectId: dashx-portfolio
         env:
-           CI: false
           FIREBASE_CLI_PREVIEWS: hostingchannels
