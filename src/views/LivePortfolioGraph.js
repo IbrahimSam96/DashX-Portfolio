@@ -8,20 +8,20 @@ import firebase from "firebase";
 const  LivePortfolioGraph = (props) => {
 
 const [width, setWidth] = useState(0);
-const [zobe, setZobe] = useState([ ]);
+const [zobe, setZobe] = useState([]);
 
 
 useEffect( ()=> {
 
 
-const handleResize = _debounce(() => {chart.applyOptions({width: props.kos.current.clientWidth,   });  } ,100 ); 
+const handleResize = _debounce(() => {chart.applyOptions({width: props.g.current.clientWidth,   });  } ,100 ); 
 
 window.addEventListener("resize", handleResize); 
 
 
-const chart = createChart(props.kos.current, {
+const chart = createChart(props.g.current, {
         width: width,
-        height: 500,
+        height: 450,
         layout: {
             textColor: '#d1d4dc',
             backgroundColor: '#131722',
@@ -102,7 +102,7 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 
 var legend = document.createElement('div');
 legend.classList.add('legend');
-props.kos.current.appendChild(legend);
+props.g.current.appendChild(legend);
 
 
 var firstRow = document.createElement('span');
@@ -165,6 +165,7 @@ tooltiptext.style.position ="absolute";
 tooltiptext.style.color = "white"; 
 tooltiptext.style.visibility = "hidden";
 tooltiptext.style.backgroundColor = "#11151f";
+
 
 
 

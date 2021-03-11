@@ -36,7 +36,7 @@ import LivePortfolioGraph from "./LivePortfolioGraph";
 // Firebase
 import fire from "./Fire"
 import firebase from "firebase"
-import axios from 'axios';
+
 
 
 const  LandingPage2 = () => {
@@ -91,8 +91,6 @@ const hidedisplayNav = ( ) => {
 window.addEventListener("scroll", hidedisplayNav)
 
 
-callserver();
-
 
 return () => {
 window.removeEventListener('scroll', hidedisplayNav);
@@ -123,7 +121,7 @@ const recentTradesColumns = [
                         style:{color : "white",fontSize: "0.7em" }, id:"ayree"
                     }
                 },
-                setCellHeaderProps: v => ({style: {backgroundColor:"#131722", color:"white"}}),
+                setCellHeaderProps: v => ({style: {backgroundColor:"#11151f", color:"white"}}),
               }
               },
                {
@@ -141,7 +139,7 @@ const recentTradesColumns = [
                         style:{color : "white",fontSize: "0.7em" }, id:"ayree"
                     }
                 },
-                setCellHeaderProps: v => ({style: {backgroundColor:"#131722", color:"white"}}),
+                setCellHeaderProps: v => ({style: {backgroundColor:"#11151f", color:"white"}}),
                },
               },
                {
@@ -158,7 +156,7 @@ const recentTradesColumns = [
                         style:{color : "white",fontSize: "0.7em" }, id:"ayree"
                     }
                 },
-                 setCellHeaderProps: v => ({style: {backgroundColor:"#131722", color:"white"}}),
+                 setCellHeaderProps: v => ({style: {backgroundColor:"#11151f", color:"white"}}),
                 },
                },
                {
@@ -175,7 +173,7 @@ const recentTradesColumns = [
                         style:{color : "white",fontSize: "0.7em" }, id:"ayree"
                     }
                 },
-                setCellHeaderProps: v => ({style: {backgroundColor:"#131722", color:"white"}}),
+                setCellHeaderProps: v => ({style: {backgroundColor:"#11151f", color:"white"}}),
                 }
                },
                {
@@ -199,7 +197,7 @@ const recentTradesColumns = [
                         const nf = new Intl.NumberFormat()
                         return nf.format(value)
                     },
-                    setCellHeaderProps: v => ({style: {backgroundColor:"#131722", color:"white"}}),
+                    setCellHeaderProps: v => ({style: {backgroundColor:"#11151f", color:"white"}}),
                    }
                   },
                   {
@@ -223,7 +221,7 @@ const recentTradesColumns = [
                          const nf = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
                          return nf.format(value)
                      },
-                     setCellHeaderProps: v => ({style: {backgroundColor:"#131722", color:"white"}}),
+                     setCellHeaderProps: v => ({style: {backgroundColor:"#11151f", color:"white"}}),
                     }
                    },
                    {
@@ -247,7 +245,7 @@ const recentTradesColumns = [
                          const nf = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' })
                          return nf.format(value)
                      },
-                     setCellHeaderProps: v => ({style: {backgroundColor:"#131722", color:"white"}}),
+                     setCellHeaderProps: v => ({style: {backgroundColor:"#11151f", color:"white"}}),
                     }
                    },
            
@@ -377,13 +375,13 @@ const getMuiTheme = () => createMuiTheme({
       },
         MuiToolbar: {
           root: {
-            backgroundColor: '#131722',
+            backgroundColor: '#11151f',
             color:"white", 
           },
         }, 
         MuiTableBody: {
             root: {
-                backgroundColor: '#131722',
+                backgroundColor: '#11151f',
               },
         },  
         MuiTableRow: {
@@ -582,7 +580,7 @@ style={{ width:'100%', height:"75px", color:"white",
  backgroundColor:"transparent", display:"grid",
   gridTemplateColumns:"repeat(2, 1fr)", 
   gridTemplateRows:"repeat(2, 1fr)"}} >
-<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.8rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif" }}>Securities</span>
+<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.9rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif" }}>Securities</span>
 <span style={{gridColumn:"2/4", gridRow:"1/3", paddingTop:"20px", paddingLeft:"25px"}}>
 <DescriptionOutlinedIcon style={{fontSize:"1.5rem", color:"white" }}/>
 </span>
@@ -597,7 +595,7 @@ style={{ width:'100%', height:"75px", color:"white",
  backgroundColor:"transparent", display:"grid",
   gridTemplateColumns:"repeat(2, 1fr)", 
   gridTemplateRows:"repeat(2, 1fr)"}} >
-<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.8rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif"}}>Recent Trades</span>
+<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.9rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif"}}>Recent Trades</span>
 <span style={{gridColumn:"2/4", gridRow:"1/3", paddingTop:"20px", paddingLeft:"25px"}}>
 <CompareArrowsIcon style={{fontSize:"1.5rem", color:"white" }}/>
 </span>
@@ -611,7 +609,7 @@ style={{ width:'100%', height:"75px", color:"white",
  backgroundColor:"transparent", display:"grid",
   gridTemplateColumns:"repeat(2, 1fr)", 
   gridTemplateRows:"repeat(2, 1fr)"}} >
-<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.8rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif"}}>Exposures</span>
+<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.9rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif"}}>Exposures</span>
 <span style={{gridColumn:"2/4", gridRow:"1/3", paddingTop:"20px", paddingLeft:"25px"}}>
 <TrendingUpIcon style={{fontSize:"1.5rem", color:"white" }}/>
 </span>
@@ -625,7 +623,7 @@ style={{ width:'100%', height:"75px", color:"white",
  backgroundColor:"transparent", display:"grid",
   gridTemplateColumns:"repeat(2, 1fr)", 
   gridTemplateRows:"repeat(2, 1fr)"}} >
-<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.8rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif"}}>Live Portfolio</span>
+<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.9rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif"}}>Live Portfolio</span>
 <span style={{gridColumn:"2/4", gridRow:"1/3", paddingTop:"20px", paddingLeft:"25px"}}>
 <AssessmentIcon style={{fontSize:"1.5rem", color:"white" }}/>
 </span>
@@ -639,7 +637,7 @@ style={{ width:'100%', height:"75px", color:"white",
  backgroundColor:"transparent", display:"grid",
   gridTemplateColumns:"repeat(2, 1fr)", 
   gridTemplateRows:"repeat(2, 1fr)"}} >
-<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.8rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif"}}>Performance Attribution</span>
+<span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.9rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif"}}>Performance Attribution</span>
 <span style={{gridColumn:"2/4", gridRow:"1/3", paddingTop:"20px", paddingLeft:"25px"}}>
 <SwapVertIcon style={{fontSize:"1.5rem", color:"white" }}/>
 </span>
@@ -665,45 +663,30 @@ style={{ width:'100%', height:"75px", color:"white",
 
 const recentTrades  = ( 
 <Modal 
-          show={show}
-          onHide={() => setShow(false) } 
-         centered
-         size="lg"
-         dialogClassName="AyoModal"
-        >
-          <Modal.Header closeButton  >
-            <Modal.Title >
-              Recent Trades
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body > 
-        
-            {renderTable2}
+show={show}
+onHide={() => setShow(false) } 
+size="lg"
+dialogClassName="AyoModal"
+style={{opacity:1}}
+>
+<Modal.Header closeButton  >
+<Modal.Title >
+Recent Trades
+</Modal.Title>
+</Modal.Header>
 
-          </Modal.Body>
-        </Modal>
+<Modal.Body > 
+{renderTable2}
+</Modal.Body>
+
+</Modal>
 
 );
 
 
-const kos = useRef(null);
+const g = useRef(null);
 const hehe = useRef(null);
 const GAV = useRef(null);
-const Stats = useRef(null);
-
-
-const callserver =  () => {
-
-  axios
-  .post('https://www.interactivebrokers.com/tradingapi/v1/oauth/request token')
-
-  .then(res => {
-
-    console.log(res.data)
-  })
-
-  .catch(error => console.error(`${error}`))
-}
 
 
 return (
@@ -716,9 +699,9 @@ return (
 </div>
 
 
-<div ref={kos} className="LivePortfolioGraph"  >
+<div ref={g} className="LivePortfolioGraph"  >
 
-<LivePortfolioGraph kos={kos}  GAV={GAV}/>
+<LivePortfolioGraph g={g}  GAV={GAV}/>
 
 </div>
 
@@ -727,21 +710,8 @@ return (
 
 </div>
 
-<div ref={Stats} className="Stats">
 
-
-</div>
-
-
-{/* <div  className="LaPie">
-{TabsNavigation()}
-</div> */}
-
-{/* <div id="LaGraph" className="LaGraph"  >
-<Main6/>
-</div> */}
-
-<div  >
+<div >
 {recentTrades}
 </div>
 
