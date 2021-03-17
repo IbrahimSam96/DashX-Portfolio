@@ -670,7 +670,7 @@ dialogClassName="AyoModal"
 style={{opacity:1}}
 >
 <Modal.Header closeButton  >
-<Modal.Title >
+<Modal.Title style={{fontFamily:"'Trebuchet MS',  Arial, sans-serif"}} >
 Recent Trades
 </Modal.Title>
 </Modal.Header>
