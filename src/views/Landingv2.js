@@ -596,14 +596,14 @@ style={{ width:'100%', height:"75px", color:"white",
   gridTemplateColumns:"repeat(2, 1fr)", 
   gridTemplateRows:"repeat(2, 1fr)"}} >
 <span style={{gridColumn:"1/2", gridRow:"1/3", fontSize:"0.9rem", paddingTop:"25px", fontFamily:"'Trebuchet MS',  Arial, sans-serif"}}>Recent Trades</span>
-<span style={{gridColumn:"2/4", gridRow:"1/3", paddingTop:"20px", paddingLeft:"25px"}}>
-<CompareArrowsIcon style={{fontSize:"1.5rem", color:"white" }}/>
+<span className="navicon" style={{gridColumn:"2/4", gridRow:"1/3", paddingTop:"20px", paddingLeft:"25px"}}>
+<CompareArrowsIcon  style={{fontSize:"1.5rem", color:"white" }}/>
 </span>
 </div>
 </NavLink> 
     );
 const renderbox3   = (
-<NavLink className="NavLink" exact to= "/Securities"> 
+<NavLink className="NavLink" exact to= "/Exposures"> 
 <div className="hodl" 
 style={{ width:'100%', height:"75px", color:"white",
  backgroundColor:"transparent", display:"grid",
@@ -617,7 +617,7 @@ style={{ width:'100%', height:"75px", color:"white",
 </NavLink> 
     );
 const renderbox4 = (
-<NavLink className="NavLink" exact to= "/Securities"> 
+<NavLink className="NavLink" exact to= "/LivePortfolio"> 
 <div className="hodl" 
 style={{ width:'100%', height:"75px", color:"white",
  backgroundColor:"transparent", display:"grid",
@@ -631,7 +631,7 @@ style={{ width:'100%', height:"75px", color:"white",
 </NavLink> 
     );
 const renderbox5 = (
-<NavLink className="NavLink" exact to= "/Securities"> 
+<NavLink className="NavLink" exact to= "/PortfolioSummary/PerformanceAttribution"> 
 <div className="hodl" 
 style={{ width:'100%', height:"75px", color:"white",
  backgroundColor:"transparent", display:"grid",
@@ -646,7 +646,7 @@ style={{ width:'100%', height:"75px", color:"white",
     );
 
 const renderbox7 = (
-<NavLink className="NavLink" exact to= "/Securities"> 
+<NavLink className="NavLink" exact to= "/Markets"> 
 <div className="hodl" 
 style={{ width:'100%', height:"75px", color:"white",
  backgroundColor:"transparent", display:"grid",

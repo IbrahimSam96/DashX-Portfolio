@@ -1,5 +1,774 @@
+@media only screen and (max-width: 859px){ 
+  
+/* Live Portfolio page LivePortfolio.Js */
+.PO{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 100px);
+  grid-gap: 20px;
+  }
+  
+      /*Portfolio Exposure Page Extest.js*/
+  .EX {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 100px);
+    grid-gap: 20px;
+    }
+    
+  .NavEx{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 1/9;
+  }
+  
+  .ManagersExposuresTable{
+    grid-row: 3/6;
+    grid-column: 1/10;
+    
+    
+  }
+    
+  .StatsEx{
+    grid-row: 3/6;
+    grid-column: 10/13;
+       }
+    
+    
+  .GraphEx{
+    grid-row: 7/10;
+    grid-column: 1/9;
+    
+     }
+    
+  .PieEx{
+    grid-row: 7/10;
+    grid-column: 9/12;
+    
+     }
+    
+    /*Manager Exposures Page Ex2.js*/
+    
+  .MG{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 100px);
+    grid-gap: 20px;
+     }
+    
+  .MgNav{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 1/9;
+     }  
+  
+  .MgSelect{
+      width: 100%;
+      height: 100%;
+      grid-row: 2/3;
+      grid-column: 10/13;
+    }
+  .MgT{
+    grid-row: 3/6;
+    grid-column: 1/10;
+     }
+  .MgStats{
+    grid-row: 3/6;
+    grid-column: 10/13;
+    }
+  .GraphMg{
+    grid-row: 7/10;
+    grid-column: 1/10;
+    }
+    
+    /*Portfolio Summary Page Script4.js*/
+    
+  .PS{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(9, 100px);
+      grid-gap: 20px;
+  }
+  
+  
+  .PsNav{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 1/9;
+    }
+  
+  
+  .PsPerformance{
+    grid-row: 3/7;
+    grid-column: 1/10;
+    width: 100%;
+    height: 100%;
+  
+  
+  }
+  
+  .PsStats{
+    grid-row: 3/7;
+    grid-column: 10/13;
+   
+  }
+  
+  .PsNotional{
+       width: 100%;
+       height: 100%;
+       grid-row: 7/10;
+       grid-column: 10/13;
+       
+    }
+  
+  .PsPositions{
+  grid-row: 7/10;
+  grid-column: 1/10;
+  
+  
+  
+    }
+  
+  .PsPositions .carousel-indicators {
+      position: relative;
+      top: 420px;
+    }
+  
+    
+  
+    /*Performance Attribution Page Script6.js*/
+    
+  .PA{
+    display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+      
+      grid-gap: 20px;
+    }
+    
+  .PaNav{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 1/9;
+    }
+  
+  .PaD{
+      min-width: 100%;
+      height: 100%;
+      grid-row: 3/4;
+      grid-column: 9/12;
+      
+      }
+    
+  .PaCH1{
+    grid-row:4/8;
+    grid-column: 1/6;
+  }
+  
+  .PaCH2{
+    grid-row: 4/8;
+    grid-column: 7/12;
+  
+  }
+  
+  .PaT{
+    grid-row: 8/12;
+    grid-column: 2/12;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    }
+    
+  
+    /*Securities Page PH.js */
+    
+  .SEC{
+    display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(8, 100px);
+      grid-gap: 20px;
+    }
+  .SecNav{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 2/9;
+    }
+    
+  .SecT{
+    grid-row: 3/11;
+    grid-column: 2/12;
+  
+    }
+    
+    /*Equity Page PH.2js*/
+    
+  .EQ{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(8, 100px);
+      grid-gap: 20px;
+    }
+    
+  .EqNav{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 2/9;
+    }
+  .EqT{ 
+    grid-row: 3/11;
+    grid-column: 2/12;
+    } 
+    
+    /*Futures Page PH.3js*/
+  .FU{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(8, 100px);
+      grid-gap: 20px;
+    }
+    
+  .FuNav{
+      width: 100%;
+      height: 100%;
+      grid-row: 2/3;
+      grid-column: 2/9;
+    }
+  .FuT{ 
+      grid-row: 3/11;
+      grid-column: 2/12;
+    } 
+    
+    /*Options Page PH.6js*/
+    
+  .OP{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 100px);
+    grid-gap: 20px;
+    }
+    
+  .OpNav{
+    width: 100%;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 2/9;
+    }
+  .OpT{ 
+    grid-row: 3/11;
+    grid-column: 2/12;
+    } 
+    
+    /*Currency By Portfolio Page PH.7js*/
+  .CU{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 100px);
+    grid-gap: 20px;
+    }
+    
+  .CuNav{
+      width: 100%;
+      height: 100%;
+      grid-row: 2/3;
+      grid-column: 2/9;
+    }
+  .CuT{ 
+      grid-row: 3/11;
+    grid-column: 2/12;
+    } 
+  
+  /*DashBoard Page Landingv2js*/
+  .LA{
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  grid-gap: 30px;
+  
+  }
+  
+  .LivePortfolioGraph{
+    grid-column: 1/15;
+    grid-row: 3/6;
+    max-width: 850px;
+  
+    }
+    
+    .legend{ 
+      position: relative;
+      top: -95%;
+      left: 10px;
+  
+      width:50%;  
+      z-index: 50;
+    
+      }
+    
+    .legend:active{
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        text-shadow: 0 0 10px #fff;
+      }
+    
+    .FirstRow{
+      position: relative;
+      font-family:'Trebuchet MS',  Arial, sans-serif;
+      font-weight: 900;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      top: -86%;
+      left: 0%;
+      padding: 5px;
+      white-space: pre-wrap;
+      width: 100%;
+      z-index: 50;
+    }
+    
+    .FirstRowPerc{
+      position: relative;
+      font-family:'Trebuchet MS',  Arial, sans-serif;
+      font-weight: 900;
+      font-size: .9rem;
+      padding: 5px;
+      top: -86%;
+      left: 0%;
+      white-space: nowrap;
+      width: 50%;
+      z-index: 50;
+    }
+  
+    .dateholder{
+      position: relative;
+      font-family:'Trebuchet MS',  Arial, sans-serif;
+      font-weight: 900;
+     padding: 5px;
+      font-size: .8rem;
+      letter-spacing: 1px;
+       color: white;
+      top: -86%;
+      left: 0%;
+      white-space: nowrap;
+      width: 50%;
+      z-index: 50;
+    }
+  
+    .GAV{
+  grid-column: 1/14;
+    grid-row: 2/2;
+    max-width: 750px;
+    z-index: 5;
+ margin-left: 25px;
+    background-color: #11151f;
+
+    }
+  
+    .GAV:hover{
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+      box-shadow: teal 0px 0px 20px 0px;
+    }
+    
+    .GAV:hover .Gavtooltip{
+    visibility: visible!important;
+    font-size: 0.6rem;
+    font-weight: bold;
+    top: -20px;
+    left: 0px;
+    }
+    .GAV:hover .tooltiptext{
+      visibility: visible!important;
+      font-size: 0.6rem;
+      font-weight: bold;
+      top: -20px;
+      right: 5px;
+      
+      }
+  
+  
+   .GavValue:active{
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  
+      .GavChange:active{
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+    .DTD:active{
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  
+    
+  .QuickLinks{
+  grid-column: 1/15;
+  grid-row: 1/2;
+  padding-left: 5px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(1, 75px);
+  grid-gap: 10px;
+  
+  background-color: #11151f;
+  border-top: 2px solid teal!important;
+  
+  position: fixed;
+    }
+/* Hide Icons  */
+.hodl  svg.MuiSvgIcon-root{
+visibility: hidden;       
+}
+
+   /*Dashboard Quick Links NavLink style*/
+   .NavLink:hover {
+    text-decoration: none;
+    }
+
+    .NavLink:hover .hodl {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+      text-shadow: 0 0 10px #fff;      }
 
 
+
+  /* .NavLink:hover .MuiSvgIcon-root {
+      color: #2196F3!important;
+      
+      } */
+      /* .NavLink:hover .hodl > span {
+        color: #2196F3!important;
+        } 
+   */
+  
+.LaSec{
+      grid-column: 1 /2;
+      grid-row: 1/2;
+      padding-top: 0px;
+    font-size: 0.5rem!important;
+      }
+    
+    .LaExp{
+      
+        grid-column: 2 /3;
+        grid-row: 1/2;
+        padding-top: 0px;
+      }
+    
+    .LaLive{
+      grid-column:3/4;
+      grid-row: 1/2;
+      padding-top: 0px;
+    
+      }
+    
+    .LaRe{
+      grid-column: 4/5;
+      grid-row: 1/2;
+      padding-top: 0px;
+    
+      }
+    
+    .LaPer{
+      grid-column: 5/6;
+      grid-row: 1/2;
+      padding-top: 0px;
+    
+      }
+    
+    .LaMar{
+      grid-column: 6/7;
+      grid-row: 1/2;
+      padding-top: 0px;
+    
+      }
+  
+  
+  /*Recent Trades/ Landing Page */
+  .AyoModal{
+  width:100% !important;
+  top: 150px;
+  }
+  
+  .modal-header{ 
+  background-color: #11151f!important;
+  color: white;
+  width: 100% !important;
+    }
+    .modal-body{ 
+      background-color: #11151f!important;
+      width: 100% !important;
+    }
+  
+  
+    /*Markets Page MarketsComponent2.Js*/
+  
+  .MarketsPage{
+      display: grid;
+      grid-template-columns: repeat(16, 1fr);
+      grid-template-rows: repeat(24, 1fr);
+      grid-gap: 20px;
+    }
+  
+  .MovingMarkets{
+    grid-column: 1 /17;
+      grid-row: 2/3;
+    }
+    
+  .MaMar{
+    grid-column: 1 /6;
+    grid-row: 3/14;
+    max-width: 1000px;
+    }
+    
+  .MaGraph{
+      grid-column: 6 /17;
+      grid-row: 3/15;
+      max-width: 1500px;
+    }
+  .MaOver{
+    grid-column: 1 /6;
+    grid-row: 15/25;
+    max-width: 1000px;
+    }
+  .MaForex{
+      grid-column: 6 /17;
+      grid-row: 15/25;
+      max-width: 1500px;
+    }
+  
+  .MuiSelect-selectMenu{
+      color:white!important
+    }
+    .MuiSelect-icon{
+      color:white!important
+    }
+  
+  
+  /*Side Bar Style*/
+  #sidebar {
+    background-color: #11151f;
+     bottom: 0px;
+       top: 43px;
+      display: block;
+      left: 0%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 0;
+      position: fixed;
+      width: 50%;
+      z-index: 1000;
+  
+    }
+    #sidebar > .nav {
+      padding-bottom: 24px;
+      background-color: #11151f;
+      
+    }
+    .list-group-item {
+      border: 0 !important;
+    }
+    h1 {
+      padding: 2rem 0;
+      font-family:'Trebuchet MS',  Arial, sans-serif;
+    }
+    .divider {
+      background-color: #11151f !important;
+      height: 2px !important;
+      margin: 0;
+      overflow: hidden !important;
+    }
+    #sidebar > .nav > .list-group-item {
+      padding: 0%;  
+      position: relative;
+      display: block;
+      background-color: #11151f;
+      text-decoration: none;
+     
+    
+    }
+    #sidebar > .nav > .list-group-item > a {
+      color: white;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 35px 10px;
+      display: block;
+      position: relative;
+      font-family:'Trebuchet MS',  Arial, sans-serif;
+    
+    }
+    .list-group > .list-group-item > a {
+      font-size: 1rem;
+      display: block;
+      position: relative;
+    
+    }
+    
+    .list-group-item > a:hover {
+      
+      text-decoration: none;
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+      text-shadow: 0 0 10px #fff;
+    }
+    .list-group-item > a.active{
+      font-weight: bold;
+      -webkit-transform: scale(1.00);
+      transform: scale(1.00);
+      background-color:teal!important;
+    }
+    .sub-menu > .list-group-item {
+        padding: 0
+    }
+    .sub-menu > .list-group-item > a {
+      color: white;
+      background-color: #11151f;
+      display: block;
+      padding: 7px 5px 7px 40px;
+      text-decoration: none;
+      font-family:'Trebuchet MS',  Arial, sans-serif;
+    }
+    #sidebar > .nav > .list-group > .sub-menu {
+      list-style: none;
+      padding: 25px;
+    }
+    
+  
+  /* Navigation Bar */
+  .MainNav{ 
+  background-color: #11151f;
+  position: fixed; 
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2 ;
+  
+    }
+  
+    
+    body {
+        margin: 0 auto;
+        padding: 0;
+        overflow-x: hidden;
+        padding-bottom: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+          "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        
+      }
+      
+      html {
+    
+        min-height: 100%;
+        position: relative;
+      }
+    
+      body {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+      }
+    
+  
+ 
+  
+    
+    /* Market Tickers @ MarketComponent NOT USED IN APP */
+    .ticker-canvas {
+      width: calc((250px * 9) + 2px);
+      /* 
+      250px = minimum width of ticker item before widget script starts removing ticker codes
+      9 = number of ticker codes
+      2px = accounts for 1px external border
+      */
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-name: ticker-canvas;
+      animation-duration: 20s;
+    }
+    .ticker-canvas:hover {
+      animation-play-state: paused
+    }
+    
+    
+    @keyframes ticker-canvas {
+      0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+      }
+      100% {
+        -webkit-transform: translate3d(-2250px, 0, 0);
+        transform: translate3d(-2250px, 0, 0);
+      }
+    }
+    
+    #flash { 
+      animation: ayre 10s;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes ayre {
+      
+      0% {
+          opacity:0;
+      }
+      50%, 100% {
+          opacity:1;
+      }
+    }
+    
+    /*Hide ScrollBar*/
+    ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+    }
+    
+    /* Dropdown for Trading View Widgets */
+    
+    .exchange{
+      background:#1E222D;
+       width: 170px;
+       padding: 2px;
+       font-family:Arial, Helvetica, sans-serif;
+       font-size:11px;
+       font-weight:600;
+       color:#fff;
+       line-height: 1;
+       border: 0;
+       border-radius: 0;
+       height: 42px;
+      -webkit-appearance: none;
+     
+      }
+    
+    .select-div{
+        width: 120px;
+        height: 42px;
+        overflow: hidden;
+        border-top:#575757 1px solid;
+        -webkit-border-radius: 4px 4px 4px 4px;
+         -moz-border-radius: 4px 4px 4px 4px;
+              border-radius: 4px 4px 4px 4px;
+        -webkit-box-shadow: inset 0 2px 4px rgba(107, 105, 105, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+         -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+              box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+              -moz-box-shadow:    0px 8px 3px -9px #000000;
+              -webkit-box-shadow: 0px 8px 3px -9px #000000;
+              box-shadow:         0px 8px 3px -9px #000000;
+    }
+    
+    select > option { 
+      background: #1E222D;
+      color: white;
+    }
+}
+
+@media only screen and (min-width: 859px){ 
 /* Live Portfolio page LivePortfolio.Js */
 .PO{
   display: grid;
@@ -302,7 +1071,7 @@
     
     .legend{ 
       position: relative;
-      top: -90%;
+      top: -95%;
       left: 10px;
   
       width:50%;  
@@ -313,6 +1082,7 @@
     .legend:active{
         -webkit-transform: scale(1.05);
         transform: scale(1.05);
+        text-shadow: 0 0 10px #fff;
       }
     
     .FirstRow{
@@ -362,13 +1132,15 @@
     grid-row: 2/2;
     max-width: 500px;
     z-index: 5;
+    background-color: #11151f;
+
     }
   
     .GAV:hover{
       -webkit-transform: scale(1.05);
       transform: scale(1.05);
-      box-shadow: rgb(68 68 68) 0px 0px 20px 0px;
-      background-color: #11151f;
+      box-shadow: teal 0px 0px 20px 0px;
+      
     }
     
     .GAV:hover .Gavtooltip{
@@ -384,6 +1156,7 @@
       font-weight: bold;
       top: -20px;
       right: 5px;
+      
       }
   
   
@@ -412,11 +1185,31 @@
   grid-gap: 10px;
   
   background-color: #11151f;
-  border-top: 3px solid teal!important;
+  border-top: 2px solid teal!important;
   
   position: fixed;
     }
-  
+        /*Dashboard Quick Links NavLink style*/
+        .NavLink:hover {
+          text-decoration: none;
+          }
+      
+          .NavLink:hover .hodl {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            text-shadow: 0 0 10px #fff;
+            
+            }
+
+
+/* .NavLink:hover .MuiSvgIcon-root {
+color: #2196F3!important;
+} */
+
+/* .NavLink:hover .hodl > span {
+color: #2196F3!important;
+}  */ 
+
     .LaSec{
       grid-column: 1 /3;
       grid-row: 1/2;
@@ -463,7 +1256,7 @@
   /*Recent Trades/ Landing Page */
   .AyoModal{
   width:100% !important;
-  
+  top: 150px;
   }
   
   .modal-header{ 
@@ -523,22 +1316,22 @@
   
   /*Side Bar Style*/
   #sidebar {
-      background-color:  #181C28;
-      bottom: 0%;
-      top: 10%;
+    background-color: #11151f;
+     bottom: 0px;
+       top: 43px;
       display: block;
       left: 0%;
       overflow-x: hidden;
       overflow-y: auto;
       padding: 0;
       position: fixed;
-      width: 20%;
+      width: 25%;
       z-index: 1000;
   
     }
     #sidebar > .nav {
       padding-bottom: 24px;
-      background-color:  #181C28;
+      background-color: #11151f;
       
     }
     .list-group-item {
@@ -546,9 +1339,10 @@
     }
     h1 {
       padding: 2rem 0;
+      font-family:'Trebuchet MS',  Arial, sans-serif;
     }
     .divider {
-      background-color: #181C28 !important;
+      background-color: #11151f !important;
       height: 2px !important;
       margin: 0;
       overflow: hidden !important;
@@ -557,7 +1351,7 @@
       padding: 0%;  
       position: relative;
       display: block;
-      background-color:  #181C28;;
+      background-color: #11151f;
       text-decoration: none;
      
     
@@ -566,38 +1360,45 @@
       color: white;
       font-size: 1rem;
       font-weight: 700;
-      padding: 15px 10px;
+      padding: 35px 10px;
       display: block;
       position: relative;
-    
+      font-family:'Trebuchet MS',  Arial, sans-serif;
     
     }
     .list-group > .list-group-item > a {
-      color: #20252b;
       font-size: 1rem;
-      padding: 0;
       display: block;
       position: relative;
     
     }
     
-    .list-group-item > a:hover,
-    .list-group-item > a.active {
-      background-color: teal;
+    .list-group-item > a:hover {
       text-decoration: none;
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+      text-shadow: 0 0 10px #fff;
+    }
+    .list-group-item > a.active{
+      font-weight: bold;
+      -webkit-transform: scale(1.00);
+      transform: scale(1.00);
+      background-color:teal!important;
     }
     .sub-menu > .list-group-item {
         padding: 0
     }
     .sub-menu > .list-group-item > a {
-      color: #20252b;
+      color: white;
+      background-color: #11151f;
       display: block;
       padding: 7px 5px 7px 40px;
       text-decoration: none;
+      font-family:'Trebuchet MS',  Arial, sans-serif;
     }
     #sidebar > .nav > .list-group > .sub-menu {
       list-style: none;
-      padding: 0;
+      padding: 25px;
     }
     
   
@@ -637,29 +1438,7 @@
       }
     
   
-    /*Dashboard Quick Links NavLink style*/
-    .NavLink:hover {
-      text-decoration: none;
-      }
-  
-      .NavLink:hover .hodl {
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
-        box-shadow: rgb(68 68 68) 0px 0px 10px 0px;
-        
-        }
-  
-  
-  
-    /* .NavLink:hover .MuiSvgIcon-root {
-        color: #2196F3!important;
-        
-        }
-        .NavLink:hover .hodl > span {
-          color: #2196F3!important;
-          }  */
-    
-  
+
     
     /* Market Tickers @ MarketComponent NOT USED IN APP */
     .ticker-canvas {
@@ -750,5 +1529,10 @@
       background: #1E222D;
       color: white;
     }
+    
+    
+  }
+
+
     
     

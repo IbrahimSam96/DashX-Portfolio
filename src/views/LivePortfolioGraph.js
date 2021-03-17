@@ -8,20 +8,21 @@ import firebase from "firebase";
 const  LivePortfolioGraph = (props) => {
 
 const [width, setWidth] = useState(0);
+const [height, setHeight] = useState(0);
 const [zobe, setZobe] = useState([]);
 
 
 useEffect( ()=> {
 
 
-const handleResize = _debounce(() => {chart.applyOptions({width: props.g.current.clientWidth,   });  } ,100 ); 
+const handleResize = _debounce(() => {chart.applyOptions({width: props.g.current.clientWidth, height: props.g.current.clientHeight,    });  } ,100 ); 
 
 window.addEventListener("resize", handleResize); 
 
 
 const chart = createChart(props.g.current, {
         width: width,
-        height: 450,
+        height: 490,
         layout: {
             textColor: '#d1d4dc',
             backgroundColor: '#131722',
@@ -57,9 +58,11 @@ const chart = createChart(props.g.current, {
         grid: {
             vertLines: {
                 color: 'rgba(42, 46, 57, 0)',
+              
             },
             horzLines: {
                 color: 'rgba(42, 46, 57, 0)',
+           
             },
         },
 });
@@ -72,6 +75,7 @@ bottomColor: 'rgba(38, 198, 218, 0.04)',
 lineColor: 'rgba(38, 198, 218, 1)',
 lineWidth: 2,
 crossHairMarkerVisible: false,
+
 });
 
 
