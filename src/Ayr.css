@@ -1572,23 +1572,10 @@ color: #2196F3!important;
     
   }
 
-  
+
 /* Grid-Tables Zoom-In Fix */
-.MUIDataTable-responsiveBase-1966{
+[class*="MUIDataTable-responsiveBase"] 
+{
   background-color: #11151f!important;
 }
-.MUIDataTable-responsiveBase-2044{
-  background-color: #11151f!important;
-}
-
-.MUIDataTable-responsiveBase-317{
-background-color: #11151f!important;
-}
-.MUIDataTable-responsiveBase-1409{
-  background-color: #11151f!important;
-}
-.MUIDataTable-responsiveBase-2579{
-  background-color: #11151f!important;
-}
-
     
