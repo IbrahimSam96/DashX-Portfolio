@@ -1574,7 +1574,7 @@ color: #2196F3!important;
 
 
 /* Grid-Tables Zoom-In Fix */
-[class*="MUIDataTable-responsiveBase"] 
+[class*="MuiPaper-root"] 
 {
   background-color: #11151f!important;
 }
