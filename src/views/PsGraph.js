@@ -24,7 +24,7 @@ this.state= {
             enabled: false
         },
         chart: {
-            renderTo:"LaPie3",
+            renderTo:"PieEx",
             backgroundColor: "transparent", 
         },
         plotOptions: {

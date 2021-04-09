@@ -12,39 +12,47 @@
   .EX {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 100px);
+    grid-template-rows: repeat(15, 100px);
     grid-gap: 20px;
     }
     
   .NavEx{
-    width: 100%;
-    height: 100%;
-    grid-row: 2/3;
+
+    grid-row: 2/2;
     grid-column: 1/9;
+    overflow: auto;
+    min-width: 300px;
   }
   
   .ManagersExposuresTable{
     grid-row: 3/6;
-    grid-column: 1/10;
-    
-    
+    grid-column: 1/13;
+    margin-left: 25px;
+    margin-right: 25px;
   }
-    
-  .StatsEx{
-    grid-row: 3/6;
-    grid-column: 10/13;
-       }
-    
-    
+
   .GraphEx{
-    grid-row: 7/10;
-    grid-column: 1/9;
-    
+    grid-row:7/9;
+    grid-column: 1/13;
+    margin-left: 25px;
+    margin-right: 25px;
      }
+
+  .StatsEx{
+    grid-row: 10/13;
+    grid-column: 3/10;
+    margin-left: 25px;
+    margin-top: 45px;
+    max-width: 500px;   
+    min-width: 250px;
+}
     
   .PieEx{
-    grid-row: 7/10;
-    grid-column: 9/12;
+    grid-row: 14/16;
+    grid-column: 1/10;
+    margin-left: 25px;
+    margin-top: 45px;
+    min-width: 250px;
     
      }
     
@@ -53,130 +61,147 @@
   .MG{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(10, 100px);
+    grid-template-rows: repeat(14, 100px);
     grid-gap: 20px;
      }
     
   .MgNav{
-    width: 100%;
-    height: 100%;
-    grid-row: 2/3;
+    grid-row: 2/2;
     grid-column: 1/9;
+    overflow: auto;
+    min-width: 350px;
      }  
   
   .MgSelect{
-      width: 100%;
-      height: 100%;
-      grid-row: 2/3;
-      grid-column: 10/13;
+      grid-row: 3/3;
+      grid-column: 1/9;
+      margin-left: 25px;
     }
+
+    .MgStats{
+      grid-row: 3/6;
+      grid-column: 1/10;
+      margin-left: 25px;
+      margin-top: 75px;
+      max-width: 500px;   
+      min-width: 350px;
+           }
+
   .MgT{
-    grid-row: 3/6;
-    grid-column: 1/10;
-     }
-  .MgStats{
-    grid-row: 3/6;
-    grid-column: 10/13;
-    }
-  .GraphMg{
     grid-row: 7/10;
-    grid-column: 1/10;
+    grid-column: 1/13;
+    margin-top: 75px;
+    margin-left: 25px;
+    margin-right: 25px;
+     }
+
+
+  .GraphMg{
+    grid-row: 11/14;
+    grid-column: 1/13;
+    margin-top: 75px;
+    margin-left: 25px;
+    margin-right: 25px;
     }
     
+
     /*Portfolio Summary Page Script4.js*/
     
   .PS{
       display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(9, 100px);
+      grid-template-rows: repeat(16, 100px);
       grid-gap: 20px;
   }
   
   
   .PsNav{
-    width: 100%;
-    height: 100%;
-    grid-row: 2/3;
+    overflow: auto;     
+    grid-row: 2 /2;
     grid-column: 1/9;
+    margin-top: -50px;
     }
   
   
   .PsPerformance{
     grid-row: 3/7;
-    grid-column: 1/10;
-    width: 100%;
-    height: 100%;
-  
+    grid-column: 1/13;
+    margin-left: 25px;
+    margin-right: 25px;
   
   }
-  
-  .PsStats{
-    grid-row: 3/7;
-    grid-column: 10/13;
-   
-  }
+
+    
+  .PsPositions{
+    grid-row: 7/10;
+    grid-column: 1/13;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+      }
+    
+    .PsPositions .carousel-indicators {
+        position: relative;
+        top: 420px;
+      }
+
   
   .PsNotional{
-       width: 100%;
-       height: 100%;
-       grid-row: 7/10;
-       grid-column: 10/13;
-       
+   grid-row: 11/14;
+  grid-column: 1/12;
+  margin-left: 50px;
+
     }
   
-  .PsPositions{
-  grid-row: 7/10;
-  grid-column: 1/10;
-  
-  
-  
+.PsStats{
+grid-row: 15/17;
+grid-column: 2/13;
+margin-left: 25px;
+margin-right: 25px;
+max-width: 700px;
     }
-  
-  .PsPositions .carousel-indicators {
-      position: relative;
-      top: 420px;
-    }
-  
-    
-  
-    /*Performance Attribution Page Script6.js*/
+
+/*Performance Attribution Page Script6.js*/
     
   .PA{
     display: grid;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(11, 1fr);
+      grid-template-rows: repeat(15, 1fr);
       
       grid-gap: 20px;
     }
     
   .PaNav{
-    width: 100%;
-    height: 100%;
+    overflow: auto;
     grid-row: 2/3;
     grid-column: 1/9;
+    margin-top: -50px;
     }
   
   .PaD{
-      min-width: 100%;
-      height: 100%;
+
       grid-row: 3/4;
-      grid-column: 9/12;
+      grid-column: 1/9;
+      margin-left: 25px;
       
       }
     
   .PaCH1{
     grid-row:4/8;
-    grid-column: 1/6;
+    grid-column: 1/12;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   
   .PaCH2{
-    grid-row: 4/8;
-    grid-column: 7/12;
-  
+    grid-row:8/12;
+    grid-column: 1/12;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   
   .PaT{
-    grid-row: 8/12;
+    grid-row: 12/16;
     grid-column: 2/12;
     width: 100%;
     height: 100%;
@@ -193,16 +218,17 @@
       grid-gap: 20px;
     }
   .SecNav{
-    width: 100%;
-    height: 100%;
-    grid-row: 2/3;
-    grid-column: 2/9;
+    min-width: 300px;
+    grid-row: 2/2;
+    grid-column: 1/9;
+    overflow: auto;
     }
     
   .SecT{
     grid-row: 3/11;
-    grid-column: 2/12;
-  
+    grid-column: 1/13;
+    margin-left: 25px;
+    margin-right: 25px;
     }
     
     /*Equity Page PH.2js*/
@@ -215,14 +241,16 @@
     }
     
   .EqNav{
-    width: 100%;
-    height: 100%;
-    grid-row: 2/3;
-    grid-column: 2/9;
+    min-width: 300px;
+    grid-row: 2/2;
+    grid-column: 1/9;
+    overflow: auto;
     }
   .EqT{ 
     grid-row: 3/11;
-    grid-column: 2/12;
+    grid-column: 1/13;
+    margin-left: 25px;
+    margin-right: 25px;
     } 
     
     /*Futures Page PH.3js*/
@@ -234,14 +262,16 @@
     }
     
   .FuNav{
-      width: 100%;
-      height: 100%;
-      grid-row: 2/3;
-      grid-column: 2/9;
+    min-width: 300px;
+    grid-row: 2/2;
+    grid-column: 1/9;
+    overflow: auto;
     }
   .FuT{ 
-      grid-row: 3/11;
-      grid-column: 2/12;
+    grid-row: 3/11;
+    grid-column: 1/13;
+    margin-left: 25px;
+    margin-right: 25px;
     } 
     
     /*Options Page PH.6js*/
@@ -254,14 +284,16 @@
     }
     
   .OpNav{
-    width: 100%;
-    height: 100%;
-    grid-row: 2/3;
-    grid-column: 2/9;
+    min-width: 300px;
+    grid-row: 2/2;
+    grid-column: 1/9;
+    overflow: auto;
     }
   .OpT{ 
     grid-row: 3/11;
-    grid-column: 2/12;
+    grid-column: 1/13;
+    margin-left: 25px;
+    margin-right: 25px;
     } 
     
     /*Currency By Portfolio Page PH.7js*/
@@ -273,14 +305,16 @@
     }
     
   .CuNav{
-      width: 100%;
-      height: 100%;
-      grid-row: 2/3;
-      grid-column: 2/9;
+    min-width: 300px;
+    grid-row: 2/2;
+    grid-column: 1/9;
+    overflow: auto;
     }
   .CuT{ 
-      grid-row: 3/11;
-    grid-column: 2/12;
+    grid-row: 3/11;
+    grid-column: 1/13;
+    margin-left: 25px;
+    margin-right: 25px;
     } 
   
   /*DashBoard Page Landingv2js*/
@@ -295,8 +329,8 @@
   .LivePortfolioGraph{
     grid-column: 1/15;
     grid-row: 3/6;
-    max-width: 850px;
-  
+    margin-left: 25px;
+    margin-right: 25px;
     }
     
     .legend{ 
@@ -358,11 +392,11 @@
     }
   
     .GAV{
-  grid-column: 1/14;
-    grid-row: 2/2;
-    max-width: 750px;
-    z-index: 5;
+  grid-column: 1/15;
+  grid-row: 2/2;
+  z-index: 5;
  margin-left: 25px;
+ margin-right: 25px;
     background-color: #11151f;
 
     }
@@ -491,7 +525,7 @@ visibility: hidden;
   /*Recent Trades/ Landing Page */
   .AyoModal{
   width:100% !important;
-  top: 150px;
+  top: 20px;
   }
   
   .modal-header{ 
@@ -510,34 +544,38 @@ visibility: hidden;
   .MarketsPage{
       display: grid;
       grid-template-columns: repeat(16, 1fr);
-      grid-template-rows: repeat(24, 1fr);
+      grid-template-rows: repeat(39, 1fr);
       grid-gap: 20px;
     }
   
   .MovingMarkets{
     grid-column: 1 /17;
       grid-row: 2/3;
+      margin-top: -30px;
     }
     
   .MaMar{
-    grid-column: 1 /6;
-    grid-row: 3/14;
+    grid-column: 1 /17;
+    grid-row: 3/11;
     max-width: 1000px;
     }
     
-  .MaGraph{
-      grid-column: 6 /17;
-      grid-row: 3/15;
-      max-width: 1500px;
-    }
+  
   .MaOver{
-    grid-column: 1 /6;
-    grid-row: 15/25;
+    grid-column: 1 /17;
+    grid-row: 12/20;
     max-width: 1000px;
     }
+
+    .MaGraph{
+      grid-column: 1 /17;
+      grid-row: 21 / 30;
+      max-width: 1500px;
+
+    }
   .MaForex{
-      grid-column: 6 /17;
-      grid-row: 15/25;
+      grid-column: 1 /17;
+      grid-row: 31/40;
       max-width: 1500px;
     }
   
@@ -767,6 +805,7 @@ visibility: hidden;
       color: white;
     }
 }
+
 
 @media only screen and (min-width: 859px){ 
 /* Live Portfolio page LivePortfolio.Js */
@@ -1183,11 +1222,11 @@ visibility: hidden;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: repeat(1, 75px);
   grid-gap: 10px;
-  
+
   background-color: #11151f;
   border-top: 2px solid teal!important;
-  
-  position: fixed;
+  max-width: 100%;
+  position: relative;
     }
         /*Dashboard Quick Links NavLink style*/
         .NavLink:hover {
@@ -1533,6 +1572,23 @@ color: #2196F3!important;
     
   }
 
+  
+/* Grid-Tables Zoom-In Fix */
+.MUIDataTable-responsiveBase-1966{
+  background-color: #11151f!important;
+}
+.MUIDataTable-responsiveBase-2044{
+  background-color: #11151f!important;
+}
 
-    
+.MUIDataTable-responsiveBase-317{
+background-color: #11151f!important;
+}
+.MUIDataTable-responsiveBase-1409{
+  background-color: #11151f!important;
+}
+.MUIDataTable-responsiveBase-2579{
+  background-color: #11151f!important;
+}
+
     

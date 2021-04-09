@@ -190,7 +190,7 @@ legend.appendChild(firstRowPerc);
 
 const tootlipActivate = async ( ) => {
 
-await delay(1000);
+await delay(1300);
 
 chart.subscribeCrosshairMove((param) => {
 if (param.time) {
